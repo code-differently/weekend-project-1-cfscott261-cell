@@ -73,7 +73,7 @@ public class Main {
         }
 
         System.out.println("==================================");
-        System.out.println("Thank you for shopping!");
+        System.out.println("Thank you for shopping. Hope to see you soon!");
     }
 }
 

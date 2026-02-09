@@ -3,9 +3,9 @@ package org.codedifferently;
 
 public class Receipt {
 
-    // validate coupon code (case-insensitive)
+    // validate coupon code
     public boolean validateCoupon(String userCode) {
-        String validCode = "SAVE10";
+        String validCode = "VIP";
 
         return userCode.trim().equalsIgnoreCase(validCode);
     }
