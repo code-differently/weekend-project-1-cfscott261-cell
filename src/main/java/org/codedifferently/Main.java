@@ -50,9 +50,9 @@ public class Main {
 
         //print receipt
 
-        System.out.println("==================================");
+        System.out.println("**********************************");
         System.out.println("     Corey's Stop and Shop ");
-        System.out.println("==================================");
+        System.out.println("**********************************");
         System.out.println("Visit ID: " + visitId);
         System.out.println("Receipt Code: " + receiptCode);
         System.out.println("----------------------------------");
