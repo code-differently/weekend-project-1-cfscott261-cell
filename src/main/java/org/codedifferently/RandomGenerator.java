@@ -4,35 +4,25 @@ import java.util.Random;
 
 public class RandomGenerator {
 
-Random random = new Random();
-public int generateRandomInt() {
+    Random random = new Random();
 
- //generating random number for visit ID
-    int num = random.nextInt(1000,10000)  ;
-    return num;
-}
-
-//price between $1-$100
-    Random num2= new Random();{
-    double price = Math.round((random.nextDouble() * 100) * 100.0) / 100.0;
-    double price2 = Math.round((random.nextDouble() * 100) * 100.0) / 100.0;
-    double price3 = Math.round((random.nextDouble() * 100) * 100.0) / 100.0;
-    }
-//calculating tax rate
-    Random tax1= new Random();{
-        double taxRate = random.nextInt(2, 9);
-
+    // generating random number for visit ID
+    public int generateRandomInt() {
+        return random.nextInt(1000, 10000);
     }
 
+    // price between $1.00 - $100.00
+    public double generatePrice() {
+        return Math.round(random.nextDouble() * 100.0 * 100.0) / 100.0;
+    }
 
+    // tax rate between 2% - 8%
+    public double generateTaxRate() {
+        return random.nextInt(2, 9) / 100.0;
+    }
 
-
-
-
-
-
-
-
-
+    // discount percentage between 5% - 20%
+    public double generateDiscountRate() {
+        return random.nextInt(5, 21) / 100.0;
+    }
 }
-
